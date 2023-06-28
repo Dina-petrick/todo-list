@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/4a8b36647d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>to-do list</title>
+</head>
+
+<body>
+    <section>
+        <div class="todo">
+            <h1 class="title">My Todo List</h1>
+            <div class="input-container">
+                <div class="input-wrapper add-input">
+                    <input type="text" class="todo-input input" placeholder="Enter a task...">
+                    <span class="todo-input-btn icon-wrap"><i class="fa-solid fa-square-plus icon"></i></span>
+                    <small class="error"></small>
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" class="search-input input" placeholder="Search todo">
+                    <span class="icon-wrap"><i class="fa-solid fa-magnifying-glass icon"></i></span>
+                </div>
+            </div>
+        </div>
+        <ul class="todo-list"></ul>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
+

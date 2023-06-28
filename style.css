@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #051937, #142651, #28336c, #404087, #5c4ca2);
+    color: white;
+}
+
+
+ul {
+    list-style: none;
+}
+
+section {
+    max-width: 680px;
+    margin: auto;
+    padding-top: 50px;
+    color: white;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.input-container {
+    display: flex;
+    gap: 40px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input {
+    padding: 10px 40px 10px 20px;
+    border: 4px solid transparent;
+    outline: none;
+    border-radius: 30px;
+}
+
+.input:focus {
+    border-color: #0096c7;
+}
+
+.icon-wrap {
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.icon:active {
+    transform: scale(.95);
+}
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.input-controller {
+    display: flex;
+    gap: 10px;
+}
+
+
+.todo-text {
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+    color: #fff;
+    line-height: 1.4;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
+
+
+
+.error{
+    width: max-content;
+    position: absolute;
+    color: red;
+    bottom: -20px;
+    left: 4px;
+}
+.edit-controller {
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.update-controller {
+    display: none;
+    flex-direction: column;
+}
+
+.save-btn, .cancel-btn{
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    background-color: #00000037;
+    padding: 5px;
+}
+
+.save-btn:first-child, .cancel-btn:first-child{
+    margin-bottom: 10px;
+}
+
+.save-btn:hover, .cancel-btn:hover{
+    background-color: #caf0f8;
+    color: #000;
+}
